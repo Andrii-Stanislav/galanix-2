@@ -1,0 +1,19 @@
+.restore-img_box {
+    padding: 20px;
+}
+
+.restore-img_btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #008000;
+    transition: all 250ms linear;
+
+    &:hover {
+        background-color: #00c200;
+        box-shadow: 0 0 10px #008000;
+    }
+}

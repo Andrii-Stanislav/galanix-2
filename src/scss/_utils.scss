@@ -1,0 +1,34 @@
+@mixin circleBtn($bgcolor) {
+      width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: $bgcolor;
+    transition: all 250ms linear;
+
+    &:hover {
+        background-color: #fff;
+        box-shadow: 0 0 15px #ff0000;
+    }
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 16%;
+        left: 47%;
+        display: block;
+        width: 10%;
+        height: 70%;
+        border-radius: 2px;
+        background-color: #000;
+    }
+
+    &::before {
+        transform: rotate(45deg)
+    }
+
+    &::after {
+        transform: rotate(-45deg)
+    }
+}
