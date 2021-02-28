@@ -17,6 +17,29 @@
 .grid-item {
     position: relative;
     margin: 0 auto;
+
+    @media screen and (max-width: 499px) {
+        &:not(:last-of-type) {
+            margin-bottom: 10px;
+        }
+    }
+   
+    @media screen and (min-width: 500px) and (max-width: 899px) {
+        &:nth-child(2n+1) {
+            & > .grid-item_img-box {
+                border-color: red;
+            }
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        &:nth-child(4n+1) {
+            & > .grid-item_img-box {
+                border-color: red;
+            }
+        }
+    }
+
 }
 
 .grid-item_img-box {
@@ -35,28 +58,16 @@
     @media screen and (max-width: 499px) {
         width: 60vw;
         height: 60vw;
-
-        &:not(:last-of-type) {
-            margin-bottom: 10px;
-        }
     }
    
     @media screen and (min-width: 500px) and (max-width: 899px) {
         width: 39vw;
         height: 39vw;
-
-        &:nth-child(2n+1) {
-            border-color: red;
-        }
     }
 
     @media screen and (min-width: 900px) {
         width: 19vw;
         height: 19vw;
-
-        &:nth-child(4n+1) {
-            border-color: red;
-        }
     }
 
 }
