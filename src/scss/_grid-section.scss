@@ -26,16 +26,24 @@
    
     @media screen and (min-width: 500px) and (max-width: 899px) {
         &:nth-child(2n+1) {
-            & > .grid-item_img-box {
+            &  .grid-item_img-box {
                 border-color: red;
+            }
+
+            &  .grid-item_img-box:hover {
+                border-color: #ffff00;
             }
         }
     }
 
     @media screen and (min-width: 900px) {
         &:nth-child(4n+1) {
-            & > .grid-item_img-box {
+            &  .grid-item_img-box {
                 border-color: red;
+            }
+
+            &  .grid-item_img-box:hover {
+                border-color:  #ffff00;
             }
         }
     }
